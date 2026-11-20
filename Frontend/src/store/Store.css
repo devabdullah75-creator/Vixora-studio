@@ -1121,6 +1121,159 @@
   box-shadow: none;
 }
 
+.store-coming-soon {
+  background: #0b0b0d;
+  color: #f7f9fc;
+}
+
+.store-coming-soon .store-nav {
+  border-bottom-color: rgba(255, 255, 255, 0.09);
+  background: rgba(11, 11, 13, 0.92);
+}
+
+.store-coming-soon .store-brand,
+.store-coming-soon .store-back-link,
+.store-coming-soon .store-footer,
+.store-coming-soon .store-footer__brand,
+.store-coming-soon .store-footer button {
+  color: #f7f9fc;
+}
+
+.store-coming-soon .store-brand__mark {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.store-coming-soon .store-brand__name small,
+.store-coming-soon .store-nav__note,
+.store-coming-soon .store-footer p,
+.store-coming-soon .store-footer small {
+  color: #92939a;
+}
+
+.store-coming-soon__hero {
+  position: relative;
+  display: grid;
+  min-height: calc(100svh - 78px);
+  align-items: center;
+  overflow: hidden;
+  padding: 90px clamp(24px, 10vw, 150px);
+  background:
+    radial-gradient(circle at 78% 46%, rgba(30, 94, 255, 0.18), transparent 24%),
+    #0b0b0d;
+}
+
+.store-coming-soon__texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(90deg, black, transparent 90%);
+}
+
+.store-coming-soon__content {
+  position: relative;
+  z-index: 2;
+  width: min(820px, 78%);
+}
+
+.store-coming-soon__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 36px;
+  color: #d5d7df;
+  font: 500 10px/1.4 var(--om-mono);
+  letter-spacing: 0.09em;
+}
+
+.store-coming-soon__eyebrow > span:first-child {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccff00;
+  box-shadow: 0 0 16px rgba(204, 255, 0, 0.75);
+}
+
+.store-coming-soon__eyebrow > span:last-child {
+  color: #85858b;
+}
+
+.store-coming-soon h1 {
+  margin: 0;
+  font-size: clamp(78px, 10.5vw, 150px);
+  font-weight: 600;
+  letter-spacing: -0.095em;
+  line-height: 0.82;
+}
+
+.store-coming-soon h1 em {
+  color: #a4b9ff;
+  font-style: normal;
+}
+
+.store-coming-soon__copy {
+  max-width: 480px;
+  margin: 34px 0 0;
+  color: #b6b7be;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.store-coming-soon__actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 34px;
+}
+
+.store-coming-soon__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #f7f9fc;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.store-coming-soon__contact:hover {
+  color: #a4b9ff;
+}
+
+.store-coming-soon__side-label {
+  position: absolute;
+  right: clamp(24px, 4vw, 60px);
+  bottom: 42px;
+  margin: 0;
+  color: #85858b;
+  font: 500 9px/1 var(--om-mono);
+  letter-spacing: 0.09em;
+  writing-mode: vertical-rl;
+}
+
+.store-coming-soon__orb {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgba(164, 185, 255, 0.16);
+  border-radius: 50%;
+}
+
+.store-coming-soon__orb--one {
+  right: 4%;
+  width: min(36vw, 520px);
+  aspect-ratio: 1;
+  box-shadow: inset 0 0 80px rgba(30, 94, 255, 0.09);
+}
+
+.store-coming-soon__orb--two {
+  right: 13%;
+  width: min(18vw, 260px);
+  aspect-ratio: 1;
+  border-color: rgba(204, 255, 0, 0.14);
+}
+
 .store-detail__notice {
   max-width: 310px;
   margin: 12px 0 0;
@@ -1261,6 +1414,51 @@
 }
 
 @media (max-width: 600px) {
+  .store-coming-soon__hero {
+    min-height: calc(100svh - 66px);
+    align-content: center;
+    padding: 70px 23px 110px;
+  }
+
+  .store-coming-soon__content {
+    width: 100%;
+  }
+
+  .store-coming-soon__eyebrow {
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    font-size: 8px;
+  }
+
+  .store-coming-soon h1 {
+    font-size: clamp(68px, 20vw, 112px);
+  }
+
+  .store-coming-soon__copy {
+    max-width: 330px;
+    margin-top: 24px;
+    font-size: 13px;
+  }
+
+  .store-coming-soon__actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .store-coming-soon__orb--one {
+    right: -24%;
+    width: 78vw;
+  }
+
+  .store-coming-soon__orb--two {
+    display: none;
+  }
+
+  .store-coming-soon__side-label {
+    display: none;
+  }
+
   .store-nav {
     min-height: 66px;
     padding: 0 18px;
