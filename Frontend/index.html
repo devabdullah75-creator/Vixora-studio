@@ -1,25 +1,425 @@
-<!doctype html>
-<html lang="en-US" class="scroll-smooth">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#f7f9fc" />
-  <title>Vixora Studio — Abdullah | Custom Motion Design & Visual Art</title>
-  <meta name="description"
-    content="Custom motion design, kinetic visual identities, 3D animation, and editorial video for brands and creators. Made from scratch around your idea and deadline." />
-  <!-- Preconnect to Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/images/abdullah-avatar.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah - Designer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./wireframes-152/gggggg-removebg-preview.png" />
 </head>
+<body>
+    <div class="site-loader" role="progressbar" aria-label="Loading website" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="site-loader__orb" aria-hidden="true"></div>
+        <img class="site-loader__portrait" src="./wireframes-152/gggggg-removebg-preview.png" alt="">
+        <div class="site-loader__counter" aria-hidden="true"><span>0</span><span>%</span></div>
+    </div>
+    <main>
+        <section class="hero">
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#work">WORK</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
 
-<body class="bg-[#f7f9fc] text-[#0a0a0b] antialiased selection:bg-[#1e5eff] selection:text-white overflow-x-hidden">
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+            <section class="hero-stage" id="home" aria-label="Introduction">
+                <div class="gradient-orb" aria-hidden="true"></div>
+                <h1 class="title title-top">HELLO</h1>
+                <h1 class="title title-bottom">
+                    <span>I'M</span>
+                    <img class="arrow" src="./wireframes-152/Glossy Chrome Paper Plane Icon.png" alt="">
+                    <span>ABDULLAH</span>
+                </h1>
+                <img class="headshot" src="./wireframes-152/gggggg-removebg-preview.png" alt="Illustrated portrait of Abdullah">
+            </section>
+
+            <footer class="hero-footer">
+                <p>DESIGNER &amp; DEVELOPER CRAFTING BOLD<br>DIGITAL EXPERIENCES THAT MAKE BRANDS<br>IMPOSSIBLE TO IGNORE.</p>
+                <a class="shop-button" href="shop.html" data-shop-transition data-magnetic>
+                    <!-- <span class="button-mark" aria-hidden="true">+</span> -->
+                    <span>SHOP</span>
+                </a>
+            </footer>
+        </section>
+
+        <section class="skills-showcase" aria-labelledby="skills-title">
+            <header class="skills-heading">
+                <p>VIXORA STUDIO · CAPABILITIES</p>
+                <h2 id="skills-title">Motion, made memorable.</h2>
+            </header>
+
+            <div class="skills-marquees">
+                <div class="skills-row" role="group" aria-label="Motion design skills">
+                    <div class="skills-track skills-track-left">
+                        <ul class="skills-group">
+                            <li class="skill-item">Motion Graphics</li>
+                            <li class="skill-item">2D Animation</li>
+                            <li class="skill-item">3D Animation</li>
+                            <li class="skill-item">Kinetic Typography</li>
+                            <li class="skill-item">UI Design</li>
+                        </ul>
+                        <ul class="skills-group" aria-hidden="true">
+                            <li class="skill-item">Motion Graphics</li>
+                            <li class="skill-item">2D Animation</li>
+                            <li class="skill-item">3D Animation</li>
+                            <li class="skill-item">Kinetic Typography</li>
+                            <li class="skill-item">UI Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-row" role="group" aria-label="Production skills">
+                    <div class="skills-track skills-track-right">
+                        <ul class="skills-group">
+                            <li class="skill-item">After Effects</li>
+                            <li class="skill-item">UI Motion Design</li>
+                            <li class="skill-item">Visual Effects (VFX)</li>
+                            <li class="skill-item">Video Editing</li>
+                            <li class="skill-item">Explainer Videos</li>
+                        </ul>
+                        <ul class="skills-group" aria-hidden="true">
+                            <li class="skill-item">After Effects</li>
+                            <li class="skill-item">UI Motion Design</li>
+                            <li class="skill-item">Visual Effects (VFX)</li>
+                            <li class="skill-item">Video Editing</li>
+                            <li class="skill-item">Explainer Videos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <figure class="about-art about-art-crystal" data-depth="1" aria-hidden="true">
+                <img src="./assets/about-crystal.png" alt="">
+            </figure>
+            <figure class="about-art about-art-cup" data-depth="1.25" aria-hidden="true">
+                <img src="./assets/about-yoko-cup.png" alt="">
+            </figure>
+            <figure class="about-art about-art-plane" data-depth="0.8" aria-hidden="true">
+                <img src="./assets/about-paper-plane.png" alt="">
+            </figure>
+            <figure class="about-art about-art-wristbands" data-depth="1.1" aria-hidden="true">
+                <img src="./assets/about-wristbands.png" alt="">
+            </figure>
+
+            <div class="about-content">
+                <p class="about-eyebrow">A LITTLE ABOUT ME</p>
+                <h2 class="about-title" id="about-title">ABOUT</h2>
+                <p class="about-copy">I’m Abdullah, a motion designer turning bold ideas into thoughtful, memorable visual experiences.</p>
+                <a class="contact-button about-cta" href="#contact">
+                    <!-- <span class="button-mark" aria-hidden="true">+</span> -->
+                    <span>SEE MORE</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="services-section" id="services" aria-labelledby="services-title">
+            <header class="services-heading">
+                <p>HOW I CAN HELP</p>
+                <h2 id="services-title">Services</h2>
+            </header>
+
+            <ol class="services-list">
+                <li class="service-item">
+                    <span class="service-number" aria-hidden="true">01</span>
+                    <div class="service-copy">
+                        <h3>Web Design</h3>
+                        <p>Thoughtful, user-focused websites shaped around your brand and audience.</p>
+                    </div>
+                    <img class="service-image" src="./assets/service-web-design.jpg" alt="Web design process illustration">
+                </li>
+                <li class="service-item">
+                    <span class="service-number" aria-hidden="true">02</span>
+                    <div class="service-copy">
+                        <h3>Web Development</h3>
+                        <p>Responsive, reliable websites built to bring your design to life.</p>
+                    </div>
+                    <img class="service-image" src="./assets/service-web-development.png" alt="Website development stages illustration">
+                </li>
+                <li class="service-item">
+                    <span class="service-number" aria-hidden="true">03</span>
+                    <div class="service-copy">
+                        <h3>Brand Identity</h3>
+                        <p>Distinctive visual identities that make your brand easy to recognize.</p>
+                    </div>
+                    <img class="service-image" src="./assets/service-brand-identity.webp" alt="Blue brand identity stationery">
+                </li>
+                <li class="service-item">
+                    <span class="service-number" aria-hidden="true">04</span>
+                    <div class="service-copy">
+                        <h3>Motion Graphics</h3>
+                        <p>Expressive animation that brings stories, brands, and ideas to life.</p>
+                    </div>
+                    <img class="service-image" src="./assets/service-motion-graphics.jpg" alt="Motion graphics title card">
+                </li>
+                <li class="service-item">
+                    <span class="service-number" aria-hidden="true">05</span>
+                    <div class="service-copy">
+                        <h3>Video Editing</h3>
+                        <p>Clean, engaging edits that shape footage into a polished story.</p>
+                    </div>
+                    <img class="service-image" src="./assets/service-video-editing.jpg" alt="Video editing timeline on a desktop screen">
+                </li>
+            </ol>
+        </section>
+
+        <section class="projects-section" id="work" aria-labelledby="projects-title">
+            <header class="projects-heading">
+                <p>SELECTED SKILLS</p>
+                <h2 id="projects-title">PROJECTS</h2>
+            </header>
+
+            <ol class="project-stack">
+                <li class="project-card">
+                    <header class="project-card-heading">
+                        <span class="project-number" aria-hidden="true">01</span>
+                        <div class="project-title-group">
+                            <h3>Motion in Motion</h3>
+                            <p>Motion Design</p>
+                        </div>
+                        <button class="project-live" type="button" disabled aria-label="Live link for Motion in Motion not provided">SEE LIVE</button>
+                    </header>
+                    <p class="project-description">Bold visual movement and clear storytelling for brands with something to say.</p>
+                    <ul class="project-skills" aria-label="Skills used">
+                        <li>Motion Graphics</li>
+                        <li>3D Animation</li>
+                        <li>Kinetic Typography</li>
+                    </ul>
+                </li>
+
+                <li class="project-card">
+                    <header class="project-card-heading">
+                        <span class="project-number" aria-hidden="true">02</span>
+                        <div class="project-title-group">
+                            <h3>Interfaces with Intent</h3>
+                            <p>Digital Experience</p>
+                        </div>
+                        <button class="project-live" type="button" disabled aria-label="Live link for Interfaces with Intent not provided">SEE LIVE</button>
+                    </header>
+                    <p class="project-description">Thoughtful digital interactions that make every moment feel natural.</p>
+                    <ul class="project-skills" aria-label="Skills used">
+                        <li>UI Motion Design</li>
+                        <li>Web Design</li>
+                        <li>After Effects</li>
+                    </ul>
+                </li>
+
+                <li class="project-card">
+                    <header class="project-card-heading">
+                        <span class="project-number" aria-hidden="true">03</span>
+                        <div class="project-title-group">
+                            <h3>Stories that Move</h3>
+                            <p>Video &amp; VFX</p>
+                        </div>
+                        <button class="project-live" type="button" disabled aria-label="Live link for Stories that Move not provided">SEE LIVE</button>
+                    </header>
+                    <p class="project-description">Carefully crafted edits that turn raw footage into polished stories.</p>
+                    <ul class="project-skills" aria-label="Skills used">
+                        <li>Video Editing</li>
+                        <li>Visual Effects</li>
+                        <li>Explainer Videos</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-content">
+                <h2 class="about-title contact-title" id="contact-title">CONTACT</h2>
+                <p class="about-copy">Have an idea in mind? Let’s make something meaningful together.</p>
+                <a class="contact-button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=devabdullah75%40gmail.com&amp;su=Project%20Inquiry%20-%20Vixora%20Studio" target="_blank" rel="noopener noreferrer">
+                    <!-- <span class="button-mark" aria-hidden="true">+</span> -->
+                    <span>EMAIL ME</span>
+                </a>
+                <div class="instagram-links">
+                    <a class="contact-button instagram-button instagram-button--plain" href="https://www.instagram.com/abdullahanimator2026/" target="_blank" rel="noopener noreferrer" aria-label="Abdullah on Instagram">
+                        <img src="./wireframes-152/instagram-line.png" alt="">
+                    </a>
+                    <a class="contact-button instagram-button" href="https://www.instagram.com/vixora.studio1/" target="_blank" rel="noopener noreferrer" aria-label="Vixora Studio on Instagram">
+                        <img src="./wireframes-152/instagram-line%20(1).png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <div class="shop-transition" aria-hidden="true">
+        <div class="shop-transition__panel">
+            <img class="shop-transition__avatar" src="./wireframes-152/gggggg-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <script>
+        (() => {
+            const loader = document.querySelector(".site-loader");
+            if (!loader) return;
+
+            const counter = loader.querySelector(".site-loader__counter span");
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+            const duration = reducedMotion.matches ? 300 : 2000;
+            let startedAt;
+
+            const updateProgress = (timestamp) => {
+                if (startedAt === undefined) startedAt = timestamp;
+                const progress = Math.min(100, Math.round(((timestamp - startedAt) / duration) * 100));
+
+                counter.textContent = String(progress);
+                loader.setAttribute("aria-valuenow", String(progress));
+
+                if (progress < 100) {
+                    window.requestAnimationFrame(updateProgress);
+                    return;
+                }
+
+                loader.classList.add("site-loader--complete");
+                window.setTimeout(() => loader.remove(), 250);
+            };
+
+            window.requestAnimationFrame(updateProgress);
+        })();
+
+        (() => {
+            const shopLink = document.querySelector("[data-shop-transition]");
+            const transition = document.querySelector(".shop-transition");
+            const panel = transition ? transition.querySelector(".shop-transition__panel") : null;
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+            if (!shopLink || !transition || !panel) {
+                return;
+            }
+
+            let navigationStarted = false;
+            let fallbackTimer;
+
+            const navigateToShop = () => {
+                if (navigationStarted) {
+                    return;
+                }
+
+                navigationStarted = true;
+                window.clearTimeout(fallbackTimer);
+                window.location.assign(shopLink.href);
+            };
+
+            panel.addEventListener("animationend", (event) => {
+                if (event.target === panel) {
+                    navigateToShop();
+                }
+            });
+
+            shopLink.addEventListener("click", (event) => {
+                if (
+                    event.defaultPrevented ||
+                    event.button !== 0 ||
+                    event.metaKey ||
+                    event.ctrlKey ||
+                    event.shiftKey ||
+                    event.altKey
+                ) {
+                    return;
+                }
+
+                event.preventDefault();
+                if (document.body.classList.contains("shop-transitioning")) {
+                    return;
+                }
+
+                transition.setAttribute("aria-hidden", "false");
+                document.body.classList.add("shop-transitioning");
+                fallbackTimer = window.setTimeout(navigateToShop, reducedMotion.matches ? 100 : 1500);
+            });
+        })();
+
+        (() => {
+            const magneticElements = document.querySelectorAll("[data-magnetic]");
+            const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+            if (!finePointer.matches || reducedMotion.matches) return;
+
+            magneticElements.forEach((element) => {
+                element.addEventListener("pointermove", (event) => {
+                    const bounds = element.getBoundingClientRect();
+                    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+                    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+                    element.style.setProperty("--magnetic-x", `${(x * 12).toFixed(1)}px`);
+                    element.style.setProperty("--magnetic-y", `${(y * 10).toFixed(1)}px`);
+                });
+
+                element.addEventListener("pointerleave", () => {
+                    element.style.setProperty("--magnetic-x", "0px");
+                    element.style.setProperty("--magnetic-y", "0px");
+                });
+            });
+        })();
+
+        (() => {
+            const hero = document.querySelector(".hero");
+            const headshot = document.querySelector(".headshot");
+            const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+            if (!hero || !headshot || !finePointer.matches || reducedMotion.matches) {
+                return;
+            }
+
+            const moveHeadshot = (event) => {
+                const bounds = hero.getBoundingClientRect();
+                const x = Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width) * 2 - 1));
+                const y = Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height) * 2 - 1));
+
+                headshot.style.setProperty("--pointer-x", `${(x * 14).toFixed(1)}px`);
+                headshot.style.setProperty("--pointer-y", `${(y * 10).toFixed(1)}px`);
+            };
+
+            const resetHeadshot = () => {
+                headshot.style.setProperty("--pointer-x", "0px");
+                headshot.style.setProperty("--pointer-y", "0px");
+            };
+
+            hero.addEventListener("pointermove", moveHeadshot, { passive: true });
+            hero.addEventListener("pointerleave", resetHeadshot);
+        })();
+
+        (() => {
+            const about = document.querySelector(".about-section");
+            const artwork = about ? [...about.querySelectorAll(".about-art")] : [];
+            const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+            if (!about || artwork.length === 0 || !finePointer.matches || reducedMotion.matches) {
+                return;
+            }
+
+            const moveArtwork = (event) => {
+                const bounds = about.getBoundingClientRect();
+                const x = Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width) * 2 - 1));
+                const y = Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height) * 2 - 1));
+
+                artwork.forEach((item) => {
+                    const depth = Number(item.dataset.depth);
+                    item.style.setProperty("--pointer-x", `${(x * 14 * depth).toFixed(1)}px`);
+                    item.style.setProperty("--pointer-y", `${(y * 12 * depth).toFixed(1)}px`);
+                });
+            };
+
+            const resetArtwork = () => {
+                artwork.forEach((item) => {
+                    item.style.setProperty("--pointer-x", "0px");
+                    item.style.setProperty("--pointer-y", "0px");
+                });
+            };
+
+            about.addEventListener("pointermove", moveArtwork, { passive: true });
+            about.addEventListener("pointerleave", resetArtwork);
+        })();
+    </script>
 </body>
-
 </html>
+
+//https://www.instagram.com/abdullahanimator2026/
+//https://www.instagram.com/vixora.studio1/
